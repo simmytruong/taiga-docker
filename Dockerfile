@@ -1,8 +1,8 @@
 FROM python:3.4.5-alpine
-MAINTAINER Jens Mittag <kontakt@jensmittag.de>
+MAINTAINER Triet Truong <mtriet.truong@gmail.com>
 
 # Define build arguments: Taiga version
-ARG VERSION=3.1.0
+ARG VERSION=3.3.0rc
 
 # Install necessary packages
 RUN apk update &&\
