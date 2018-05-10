@@ -23,9 +23,9 @@ fi
 # Finally, create a symlink from the local.py in the volume directory to the settings/ directory.
 ln -sf /apps/taiga/data/local.py /apps/taiga/taiga-back/settings/local.py
 
-# If a frontend configuration file is present in /taiga.io/data, delete the default one
+# If a frontend configuration file is present in /apps/taiga/data, delete the default one
 # from inside of the docker image, and create a symlink. Otherwise move the default one
-# into /taiga.io/data and symlink to it as well.
+# into /apps/taiga/data and symlink to it as well.
 if [ -f /apps/taiga/data/conf.json ]; then
 
   # Case 1: there is already pre-configuration in the volume directory, so let's delete
